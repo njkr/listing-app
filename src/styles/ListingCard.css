@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.list-card {
+  width: 30%;
+}
+.list-card table {
+  width: 100%;
+}
+
+.list-image {
+  margin-bottom: 20px;
+  position:relative;
+}
+.list-image  button{
+position: absolute;
+right: 4px;
+bottom: 8px;
+}
+.list-image img {
+  width: 100%;
+}
+.list-card table td {
+  padding: 5px 0 5px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.list-card table td:first-child {
+  width: 20%;
+}
+
+.list-card table td:nth-child(2) {
+  padding-left: 5%;
+  width: 80%;
+  font-weight: 500;
+  float: right;
+}
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Disable button when clicked */
+.delete-btn:active {
+  background-color: #dc3545;
+  transform: translateY(1px);
+}
+/* Media query for tablets (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .list-card {
+    width: 48%;
+  }
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+  .list-card {
+    width: 100%;
+  }
+}
